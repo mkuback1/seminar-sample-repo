@@ -9,10 +9,9 @@
 clear; close; clc;
 
 % Define Parameters
-n = 100; % size of the linear system for Experiments 1 and 3 (single solves)
-m = 50; % number of times we will solve the linear system in 3 and 4
-n_start = 10; % initial size of linear system for Experiments 2 and 4
-%n_total = 7; % will run experiments 2 and 4 for n_total matrices of increasing size
+n_start = 10; % initial size of linear system
+n_total = 7; % will run experiments 1-2 for n_total matrices of increasing size
+m = 50; % number of times we will solve the linear system in experiment 2
 
 
 %% Experiment 1: Timing Single Solves for both Methods as n increases
