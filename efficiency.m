@@ -10,7 +10,7 @@ clear; close; clc;
 
 % Define Parameters
 n_start = 10; % initial size of linear system
-n_total = 7; % will run experiments 1-2 for n_total matrices of increasing size
+%n_total = 7; % will run experiments 1-2 for n_total matrices of increasing size
 m = 50; % number of times we will solve the linear system in experiment 2
 
 
