@@ -28,7 +28,7 @@ fprintf('Testing Gaussian Elimination Solvers:\n')
 fprintf('-------------------------------------\n')
 
 xGE = myGE(A,b);
-xGEpp = myGE(A,b);
+xGEpp = myGEpp(A,b);
 
 error_GE = norm(x_true - xGE);
 error_GEpp = norm(x_true - xGEpp);
