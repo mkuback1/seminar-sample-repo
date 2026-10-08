@@ -1,7 +1,7 @@
 %% Validation for GE and LU algorithms
-% This script validates the algorithms myGE, myGEpp, myLU, and myPLU
-% against an analytical solution derivated by hand. Using the built-in L2
-% norm to evaluate errors.
+% This script validates the algorithms myGE, myGEpp, myLU, myPLU,
+% myForwardSolve, and myBackSolve against an analytical solution derived by
+% hand. Using the built-in L2 norm to evaluate errors.
 
 clear; clc;
 fprintf('======================================================\n')
@@ -63,9 +63,9 @@ fprintf(['P error is ' num2str(error_P) '; Lpp error is ' num2str(error_Lpp) '; 
 fprintf('\n');
 
 %% Verify solving with LU and PLU Decompositions
-fprintf('-------------------------------------\n')
-fprintf('Testing Solution using LU and PLU:\n')
-fprintf('-------------------------------------\n')
+fprintf('------------------------------------------\n')
+fprintf('Testing Solution Process using LU and PLU:\n')
+fprintf('------------------------------------------\n')
 
 % Solving with PLU
 y = myForwardSolve(L,b);
